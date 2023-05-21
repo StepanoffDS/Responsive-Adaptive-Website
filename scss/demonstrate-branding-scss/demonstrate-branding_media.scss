@@ -1,0 +1,40 @@
+@include laptop{
+
+  .demonstrate-branding {
+    >.container{
+      padding: 64px calc(10px + (80 - 10 ) * ((100vw - 992px) / (1440 - 992)));
+    }
+  }
+
+  .demonstrate-branding__content-article  {
+    margin: auto calc(60px + (140 - 60 ) * ((100vw - 992px) / (1440 - 992))) auto 0;
+  }
+}
+
+@include tablet{
+  .demonstrate-branding{
+    >.container{
+      padding: 40px 32px;
+    }
+  }
+
+  .demonstrate-branding__content{
+    padding: 0;
+  }
+
+  .demonstrate-branding__content-article{
+    margin: 0;
+  }
+
+  .demonstrate-branding__header{
+    display: none;
+  }
+
+  .demonstrate-branding__content-image{
+    display: none;
+  }
+
+  .demonstrate-branding__content-article{
+    flex: 0 1 100%;
+  }
+}

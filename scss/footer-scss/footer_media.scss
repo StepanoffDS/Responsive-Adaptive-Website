@@ -1,0 +1,7 @@
+@include laptop{
+  .footer {
+    > .container {
+      padding: 64px calc(10px + (80 - 10 ) * ((100vw - 992px) / (1440 - 992)));
+    }
+  }
+}

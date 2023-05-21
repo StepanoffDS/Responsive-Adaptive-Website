@@ -1,0 +1,32 @@
+@include laptop{
+
+  .latest-posts {
+    >.container{
+      padding: 64px calc(10px + (80 - 10 ) * ((100vw - 992px) / (1440 - 992)));
+    }
+  }
+}
+
+@include tablet{
+  .latest-posts{
+    >.container{
+      padding: 48px 32px 16px;
+    }
+  }
+
+  .latest-posts__content{
+    padding: 0;
+  }
+
+  .latest-posts__header{
+    margin: 0 0 40px;
+    width: 100%;
+  }
+
+  .latest-posts__card{
+    flex: 0 1 calc(50% - 16px);
+    margin-bottom: 32px;
+  }
+
+
+}

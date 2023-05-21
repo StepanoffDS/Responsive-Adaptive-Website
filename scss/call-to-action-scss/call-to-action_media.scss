@@ -1,0 +1,36 @@
+@include laptop{
+  .call-to-action {
+    > .container {
+      padding: 64px calc(10px + (80 - 10 ) * ((100vw - 992px) / (1440 - 992)));
+    }
+  }
+
+  // .call-to-action__area{
+  //   padding: 40px calc(30px + (64 - 30 ) * ((100vw - 992px) / (1440 - 992)));;
+  // }
+
+  @media (max-width: 1180px){
+    .call-to-action__area{
+      > div{
+        flex: 0 1 100%;
+      }
+    }
+
+    .call-to-action__header{
+      margin-bottom: 32px;
+    }
+
+    .call-to-action__content{
+      justify-content: flex-start;
+
+    }
+
+    .call-to-action__form{
+      width: 80%;
+      form{
+        width: 100%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,61 @@
+.testimonial{
+  width: 100%;
+
+  > .container{
+    background-color: $bgColorSecond;
+  }
+}
+
+.testimonial__header{
+  @include header;
+  width: 800px;
+  margin: 0 auto 64px;
+}
+
+.testimonial__header-title{
+  @include justify-center;
+  margin: 0 0 16px;
+}
+
+.testimonial__header-subtitle{
+  @include justify-center;
+
+  > p{
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.testimonial__content{
+  display: flex;
+  padding: 0 32px;
+  p{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: $titleColor;
+  }
+}
+
+.testimonial__people, .testimonial__rating, .testimonial__like{
+  flex: 0 1 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial__people-avatar{
+  display: inline;
+}
+
+.divider{
+  width: 40px;
+  background-image: url('../img/icons/Divider.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+
+}
+
+

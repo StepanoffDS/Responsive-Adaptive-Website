@@ -1,0 +1,41 @@
+@include laptop{
+
+  .product-features {
+    >.container{
+      padding: 64px calc(10px + (80 - 10 ) * ((100vw - 992px) / (1440 - 992)));
+    }
+  }
+
+  .product-features__content-article{
+    margin: auto calc(60px + (140 - 60 ) * ((100vw - 992px) / (1440 - 992))) auto 0;
+  }
+
+}
+
+@include tablet{
+  .product-features{
+    >.container{
+      padding: 40px 32px;
+    }
+  }
+
+  .product-features__content{
+    padding: 0;
+  }
+
+  .product-features__content-article{
+    margin: 0;
+  }
+
+  .product-features__header{
+    display: none;
+  }
+
+  .product-features__content-image{
+    display: none;
+  }
+
+  .product-features__content-article{
+    flex: 0 1 100%;
+  }
+}

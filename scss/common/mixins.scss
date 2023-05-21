@@ -1,0 +1,46 @@
+@mixin align-center{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin justify-center{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin button ($color, $bgcolor){
+  background-color: $bgcolor;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px 18px;
+  color: $color;
+  font-size: 15px;
+  font-weight: 600;
+  a{
+    color: $color;
+    text-decoration: none;
+  }
+
+  @if($bgcolor == $bgColorSecond){
+    border: 1px solid darken($bgcolor, 10%);
+  }
+  
+  &:hover{
+    background-color: darken($bgcolor, 10%);
+    transition: $timeListTransition;
+  }
+}
+
+@mixin header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin margin($tbmarginpx, $rlmargin){
+  margin: $tbmarginpx calc(30px + ($rlmargin - 10) * (100vw - 768px) / (1440 - 768));
+}
+

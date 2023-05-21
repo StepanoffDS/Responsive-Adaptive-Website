@@ -1,0 +1,21 @@
+@include laptop{
+  .testimonial {
+    > .container {
+      padding: 64px calc(10px + (80 - 10 ) * ((100vw - 992px) / (1440 - 992)));
+    }
+  }
+}
+
+@include tablet{
+  .testimonial{
+    >.container{
+      padding: 40px 32px;
+    }
+  }
+
+  .testimonial__header{
+    margin: 0 0 40px;
+    width: 100%;
+  }
+
+}
